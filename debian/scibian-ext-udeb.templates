@@ -1,0 +1,8 @@
+Template: debian-installer/scibian-ext-udeb/title
+Type: text
+Description: Local Scibian configuration
+
+Template: scibian-ext-udeb/part
+Type: select
+Description: Select the partitioning
+Choices: 1disk, 2hdd, 2hdd_1ssd

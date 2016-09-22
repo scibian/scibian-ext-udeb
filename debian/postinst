@@ -1,0 +1,17 @@
+#!/bin/sh -e
+set -x
+
+. /usr/share/debconf/confmodule
+
+if (grep -q -e '/cdrom' /proc/cmdline) ; then
+
+    # ask for partitionning scheme
+    db_input high scibian-ext-udeb/part	|| true
+    db_go
+    db_get scibian-ext-udeb/part
+    part="$RET"
+    db_set scripted-partitioning/script "$part"
+
+fi
+
+exit 0

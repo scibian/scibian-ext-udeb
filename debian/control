@@ -1,0 +1,14 @@
+Source: scibian-ext-udeb
+Section: debian-installer
+Priority: optional
+Maintainer: Scibian Packaging Team <packaging@scibian.org>
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.6.1
+
+Package: scibian-ext-udeb
+Architecture: all
+XC-Package-Type: udeb
+Depends: ${misc:Depends}, cdebconf-udeb, network-preseed, file-preseed
+XB-Installer-Menu-Item: 2101
+Description: Setup scripts for external Scibian installations
+ .

@@ -1,0 +1,5 @@
+scibian-ext-udeb (8.0) jessie; urgency=low
+
+  * Initial release.
+
+ -- Scibian Packaging Team <packaging@scibian.org>  Thu, 22 Sep 2016 11:00:04 +0200
